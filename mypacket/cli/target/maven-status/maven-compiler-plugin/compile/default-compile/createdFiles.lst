@@ -1,0 +1,3 @@
+org/opendaylight/mypacket/cli/api/MypacketCliCommands.class
+org/opendaylight/mypacket/cli/impl/MypacketCliCommandsImpl.class
+org/opendaylight/mypacket/cli/commands/MypacketCliTestCommand.class

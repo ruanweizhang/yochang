@@ -1,0 +1,33 @@
+<features xmlns="http://karaf.apache.org/xmlns/features/v1.2.0" name="odl-mypacket-0.1.0-SNAPSHOT" xsi:schemaLocation="http://karaf.apache.org/xmlns/features/v1.2.0 http://karaf.apache.org/xmlns/features/v1.2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <repository>mvn:org.opendaylight.yangtools/features-yangtools/1.0.1-Boron-SR1/xml/features</repository>
+  <repository>mvn:org.opendaylight.controller/features-mdsal/1.4.1-Boron-SR1/xml/features</repository>
+  <repository>mvn:org.opendaylight.mdsal.model/features-mdsal-model/0.9.1-Boron-SR1/xml/features</repository>
+  <repository>mvn:org.opendaylight.netconf/features-restconf/1.4.1-Boron-SR1/xml/features</repository>
+  <repository>mvn:org.opendaylight.dlux/features-dlux/0.4.1-Boron-SR1/xml/features</repository>
+  <repository>mvn:org.opendaylight.openflowplugin/features-openflowplugin/0.3.1-Boron-SR1/xml/features</repository>
+  <feature name="odl-mypacket-api" version="0.1.0-SNAPSHOT" description="OpenDaylight :: mypacket :: api">
+    <feature version="0.9.1-Boron-SR1">odl-mdsal-models</feature>
+    <bundle>mvn:org.opendaylight.mypacket/mypacket-api/0.1.0-SNAPSHOT</bundle>
+    <feature version="0.3.1-Boron-SR1">odl-openflowplugin-southbound</feature>
+  </feature>
+  <feature name="odl-mypacket" version="0.1.0-SNAPSHOT" description="OpenDaylight :: mypacket">
+    <feature version="1.4.1-Boron-SR1">odl-mdsal-broker</feature>
+    <feature version="0.1.0-SNAPSHOT">odl-mypacket-api</feature>
+    <bundle>mvn:org.opendaylight.mypacket/mypacket-impl/0.1.0-SNAPSHOT</bundle>
+    <feature version="0.3.1-Boron-SR1">odl-openflowplugin-southbound</feature>
+  </feature>
+  <feature name="odl-mypacket-rest" version="0.1.0-SNAPSHOT" description="OpenDaylight :: mypacket :: REST">
+    <feature version="0.1.0-SNAPSHOT">odl-mypacket</feature>
+    <feature version="1.4.1-Boron-SR1">odl-restconf</feature>
+  </feature>
+  <feature name="odl-mypacket-ui" version="0.1.0-SNAPSHOT" description="OpenDaylight :: mypacket :: UI">
+    <feature version="0.1.0-SNAPSHOT">odl-mypacket-rest</feature>
+    <feature version="1.4.1-Boron-SR1">odl-mdsal-apidocs</feature>
+    <feature version="1.4.1-Boron-SR1">odl-mdsal-xsql</feature>
+    <feature version="0.4.1-Boron-SR1">odl-dlux-yangui</feature>
+  </feature>
+  <feature name="odl-mypacket-cli" version="0.1.0-SNAPSHOT" description="OpenDaylight :: mypacket :: CLI">
+    <feature version="0.1.0-SNAPSHOT">odl-mypacket</feature>
+    <bundle>mvn:org.opendaylight.mypacket/mypacket-cli/0.1.0-SNAPSHOT</bundle>
+  </feature>
+</features>

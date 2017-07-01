@@ -1,0 +1,80 @@
+Invoking Maven for the goals: [org.apache.maven.plugins:maven-javadoc-plugin:2.10.3:test-javadoc] with no properties
+
+M2_HOME=/usr/local/apache-maven-3.5.0
+MAVEN_OPTS= -Xmx2096m -XX:MaxPermSize=512m
+JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre
+JAVA_OPTS=null
+
+[INFO] Scanning for projects...
+[WARNING] The project org.opendaylight.mypacket:mypacket-features:jar:0.1.0-SNAPSHOT uses prerequisites which is only intended for maven-plugin projects but not for non maven-plugin projects. For such purposes you should use the maven-enforcer-plugin. See https://maven.apache.org/enforcer/enforcer-rules/requireMavenVersion.html
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Building mypacket-features 0.1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> maven-javadoc-plugin:2.10.3:test-javadoc (default-cli) > generate-test-sources @ mypacket-features >>>
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven) @ mypacket-features ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.2.201409121644:prepare-agent (pre-unit-test) @ mypacket-features ---
+[INFO] argLine set to -javaagent:/Users/imac/.m2/repository/org/jacoco/org.jacoco.agent/0.7.2.201409121644/org.jacoco.agent-0.7.2.201409121644-runtime.jar=destfile=/Users/imac/Desktop/git/mypacket/features/target/code-coverage/jacoco.exec,excludes=**/gen/**:**/generated-sources/**:**/yang-gen/**:**/pax/**
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (check-license) @ mypacket-features ---
+[INFO] Starting audit...
+Audit done.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (default) @ mypacket-features ---
+[INFO] Starting audit...
+Audit done.
+[INFO] 
+[INFO] >>> maven-pmd-plugin:3.6:cpd-check (cpd) > :cpd @ mypacket-features >>>
+[INFO] 
+[INFO] --- maven-pmd-plugin:3.6:cpd (cpd) @ mypacket-features ---
+[INFO] 
+[INFO] <<< maven-pmd-plugin:3.6:cpd-check (cpd) < :cpd @ mypacket-features <<<
+[INFO] 
+[INFO] 
+[INFO] --- maven-pmd-plugin:3.6:cpd-check (cpd) @ mypacket-features ---
+[INFO] 
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:unpack (unpack-license) @ mypacket-features ---
+[INFO] Configured Artifact: org.opendaylight.odlparent:odl-license:0.1.1-Boron-SR1:jar
+[INFO] Unpacking /Users/imac/.m2/repository/org/opendaylight/odlparent/odl-license/0.1.1-Boron-SR1/odl-license-0.1.1-Boron-SR1.jar to /Users/imac/Desktop/git/mypacket/features/target/classes with includes "" and excludes "META-INF/**"
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:resolve (default) @ mypacket-features ---
+[INFO] 
+[INFO] --- script-maven-plugin:1.0.0:execute (add-version-to-features) @ mypacket-features ---
+[INFO] executing groovy script
+[INFO] Updating repository declarations
+[INFO] Processing feature: odl-mypacket-api
+[INFO] Processing feature: odl-mypacket
+[INFO] Processing feature: odl-mypacket-rest
+[INFO] Processing feature: odl-mypacket-ui
+[INFO] Processing feature: odl-mypacket-cli
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.10:add-resource (default) @ mypacket-features ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.1:resources (filter) @ mypacket-features ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/imac/Desktop/git/mypacket/features/src/main/resources
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.1:resources (default-resources) @ mypacket-features ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/imac/Desktop/git/mypacket/features/src/main/resources
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ mypacket-features ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] <<< maven-javadoc-plugin:2.10.3:test-javadoc (default-cli) < generate-test-sources @ mypacket-features <<<
+[INFO] 
+[INFO] 
+[INFO] --- maven-javadoc-plugin:2.10.3:test-javadoc (default-cli) @ mypacket-features ---
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 5.468 s
+[INFO] Finished at: 2017-06-20T14:21:43+08:00
+[INFO] Final Memory: 84M/876M
+[INFO] ------------------------------------------------------------------------

@@ -1,0 +1,9 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Tue Jun 20 14:21:15 CST 2017
+sal-clustering-config-1.4.1-Boron-SR1-moduleshardconf.xml>=
+sal-clustering-config-1.4.1-Boron-SR1-entityownershipconfig.xml>=
+sal-clustering-config-1.4.1-Boron-SR1-moduleconf.xml>=
+sal-clustering-config-1.4.1-Boron-SR1-datastore.cfg>=
+sal-clustering-config-1.4.1-Boron-SR1-config.xml>=
+sal-clustering-config-1.4.1-Boron-SR1-akkaconf.xml>=
+sal-clustering-config-1.4.1-Boron-SR1-factoryakkaconf.xml>=

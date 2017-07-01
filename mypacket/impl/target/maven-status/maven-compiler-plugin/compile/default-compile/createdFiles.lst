@@ -1,0 +1,5 @@
+org/opendaylight/mypacket/impl/GenericTransactionUtils.class
+org/opendaylight/mypacket/impl/MypacketProvider.class
+org/opendaylight/mypacket/impl/InventoryUtils.class
+org/opendaylight/mypacket/impl/MatchUtils.class
+org/opendaylight/mypacket/impl/MypacketImpl.class
